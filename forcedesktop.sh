@@ -3,8 +3,7 @@
 dnf install epel-release -y
 dnf install tigervnc-server -y
 dnf install xrdp -y
-dnf groupinstall "Xfce" -y
-
+sudo dnf groupinstall "Xfce" "Xfce Desktop" -y
 # xRDPとバックエンドを直接、クリーン
 
 pkill vnc
