@@ -18,6 +18,7 @@ gsettings set org.freedesktop.Tracker3.Miner.Files ignored-directories "['/root'
 # xRDPとバックエンドを直接、起動
 
 vncserver :1
+export $(dbus-launch)
 startxfce4 :1&
 xrdp-sesman
 sed -i '/port=-1/a exec=nothing' /etc/xrdp/xrdp.ini
