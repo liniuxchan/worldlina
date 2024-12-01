@@ -14,8 +14,9 @@ pkill xfce
 # xRDPとバックエンドを直接、起動
 
 vncserver :1
+startxfce4 :1&
 xrdp-sesman
-sed -i '/port=-1/a exec=startxfce4' /etc/xrdp/xrdp.ini
+sed -i '/port=-1/a exec=nothing' /etc/xrdp/xrdp.ini
 sed -i 's/port=-1/port=5901/' /etc/xrdp/xrdp.ini
 xrdp
 
