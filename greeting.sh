@@ -1,0 +1,1 @@
+echo "😄Hi!I'm Liniuxchan!"

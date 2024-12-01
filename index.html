@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>コピーボタン</title>
     <script>
-        function copyToClipboard() {
-            // コピーしたいテキストを指定
-            const text = 'curl -sSL https://liniuxchan.github.io/worldlina/installall.sh | bash';
-
+        function copyToClipboard(text) {
             // navigator.clipboard.writeTextを使ってクリップボードにコピー
             navigator.clipboard.writeText(text)
                 .then(() => {
@@ -23,6 +20,7 @@
     </script>
 </head>
 <body>
-    <button onclick="copyToClipboard()">install all</button>
+    <button onclick="copyToClipboard('curl -sSL https://liniuxchan.github.io/worldlina/installall.sh | bash')">install all</button>
+    <button onclick="copyToClipboard('curl -sSL https://liniuxchan.github.io/worldlina/greeting.sh | bash')">greeting.sh</button>
 </body>
 </html>
