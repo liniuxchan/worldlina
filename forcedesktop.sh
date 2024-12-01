@@ -3,7 +3,7 @@
 dnf install epel-release -y
 dnf install tigervnc-server -y
 dnf install xrdp -y
-dnf install xfce4 -y
+dnf groupinstall "Xfce" -y
 
 # xRDPとバックエンドを直接、クリーン
 
