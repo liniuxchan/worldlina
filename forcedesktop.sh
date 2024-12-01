@@ -11,6 +11,7 @@ pkill vnc
 pkill xrdp
 pkill xfce
 tracker3 reset --filesystem
+tracker3 reset --hard
 gsettings set org.freedesktop.Tracker3.Miner.Files index-recursive-directories "[]"
 gsettings set org.freedesktop.Tracker3.Miner.Files ignored-directories "['/root']"
 
