@@ -9,6 +9,7 @@ dnf groupinstall "Xfce" -y
 
 pkill vnc
 pkill xrdp
+pkill dbus
 pkill xfce
 tracker3 reset --filesystem
 tracker3 reset --hard
