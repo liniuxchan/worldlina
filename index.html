@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html lang=“ja”>
+<html lang="ja">
 <head>
-    <meta charset=“UTF-8”>
-    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>コピーボタン</title>
     <script>
         function copyToClipboard() {
             // コピーしたいテキストを指定
-            const text = ‘curl installall.sh’;
-            
-            // 仮のテキストエリアを作成して、テキストをその中に挿入
-            const textarea = document.createElement(‘textarea’);
-            textarea.value = text;
-            document.body.appendChild(textarea);
-            
-            // テキストを選択してコピー
-            textarea.select();
-            document.execCommand(‘copy’);
-            
-            // テキストエリアを削除
-            document.body.removeChild(textarea);
-            
-            // コピー成功のメッセージ
-            alert(‘コピーしました: ‘ + text);
+            const text = 'curl -sSL https://liniuxchan.github.io/worldlina/installall.sh | bash';
+
+            // navigator.clipboard.writeTextを使ってクリップボードにコピー
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    // コピー成功のメッセージ
+                    alert('コピーしました: ' + text);
+                })
+                .catch(err => {
+                    // コピー失敗時のエラーメッセージ
+                    console.error('コピーに失敗しました', err);
+                });
         }
     </script>
 </head>
 <body>
-    <button onclick=“copyToClipboard()”>curl installall.sh をコピー</button>
+    <button onclick="copyToClipboard()">install all</button>
 </body>
 </html>
