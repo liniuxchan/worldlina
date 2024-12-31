@@ -56,3 +56,4 @@ actor User
 User -> System: Log in
 System -> Database: Query user credentials
 @enduml
+```
