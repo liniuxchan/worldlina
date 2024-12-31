@@ -21,3 +21,6 @@ graph TD;
     C --> F[子ノード 2-1];
 ```
 
+```python
+def hello_world():
+    print("Hello, World!")
