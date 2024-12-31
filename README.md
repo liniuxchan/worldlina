@@ -24,7 +24,7 @@ graph TD;
 ```python
 def hello_world():
     print("Hello, World!")
-
+```
 上記のように、言語名（ここでは `python`）をコードブロックの開始行に指定することで、シンタックスハイライトを有効にできます。
 
 - Python: `python`
