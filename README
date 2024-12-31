@@ -11,6 +11,7 @@
 🎨xrdp
 🎨xfce4
 
+```markdown
 ```mermaid
 graph TD;
     A[親ノード] --> B[子ノード 1];
