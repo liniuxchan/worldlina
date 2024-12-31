@@ -12,7 +12,7 @@
 🎨xfce4
 
 
-```html
+```mermaid
 graph TD;
     A[親ノード] --> B[子ノード 1];
     A --> C[子ノード 2];
