@@ -11,7 +11,7 @@
 🎨xrdp
 🎨xfce4
 
-```markdown
+
 ```html
 graph TD;
     A[親ノード] --> B[子ノード 1];
