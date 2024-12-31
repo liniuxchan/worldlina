@@ -39,10 +39,20 @@ def hello_world():
 - Shell: `bash`
 
 ### 2. **リスト形式や構造体を表現するコードブロック**
-```markdown
+
 ```json
 {
   "name": "Alice",
   "age": 25,
   "isStudent": false
 }
+Mermaidコードを使って、フローチャートやグラフを描画できます。
+
+### 4. **PlantUML（UML図用）**
+```
+```plantuml
+@startuml
+actor User
+User -> System: Log in
+System -> Database: Query user credentials
+@enduml
